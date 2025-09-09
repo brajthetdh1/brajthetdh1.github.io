@@ -13,12 +13,12 @@ function App() {
   return (
     <Router>
       <Layout>
-        <div className="bg-slate-50/80 text-slate-800 min-h-screen flex flex-col">
+        <div className="bg-slate-50/80 text-slate-800 min-h-screen flex">
           {/* Navbar */}
           <Nav />
 
           {/* Main content */}
-          <main className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-40">
+          <main className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-40">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/skills" element={<Skills />} />

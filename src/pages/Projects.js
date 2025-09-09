@@ -22,33 +22,27 @@ export default function Projects() {
   ];
 
   return (
-    <section>
-      <h2 className="text-2xl font-bold">Projects</h2>
-      <p className="mt-2 text-slate-600">
-        A few of the projects I’ve built recently.
-      </p>
+    <section className="max-w-5xl mx-auto py-12 px-6">
+  <h2 className="text-3xl font-bold mb-8">Projects</h2>
 
-      <div className="mt-8 grid gap-6 md:grid-cols-2">
-        {projects.map((project, idx) => (
-          <div
-            key={idx}
-            className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
-          >
-            <h3 className="text-lg font-semibold text-indigo-700">
-              {project.title}
-            </h3>
-            <p className="mt-2 text-sm text-slate-600">{project.description}</p>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-block text-indigo-600 hover:underline text-sm"
-            >
-              View Project →
-            </a>
-          </div>
-        ))}
-      </div>
-    </section>
+  <div className="space-y-8">
+    <div>
+      <h3 className="text-xl font-semibold">Enterprise Backend Systems – Qappa Lab</h3>
+      <ul className="list-disc ml-6 mt-2">
+        <li>Designed data crawling pipelines using Spring Batch for energy trading analytics.</li>
+        <li>Developed document and notification management systems integrated with Kafka and REST APIs.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 className="text-xl font-semibold">5G Core Intermediary Node – Reliance Jio</h3>
+      <ul className="list-disc ml-6 mt-2">
+        <li>Implemented message encoding/decoding (SCTP, M3UA, SIGTRAN).</li>
+        <li>Developed protocol translation logic (RPC to SIGTRAN).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
   );
 }

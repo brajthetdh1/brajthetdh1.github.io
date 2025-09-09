@@ -1,30 +1,31 @@
 
 export default function Skills() {
   return (
-    <section>
-      <h2 className="text-2xl font-bold">Skills</h2>
-      <p className="mt-2 text-slate-600">
-        Technologies and tools I use frequently.
-      </p>
+    <section className="max-w-5xl mx-auto py-12 px-6">
+  <h2 className="text-3xl font-bold mb-8">Skills</h2>
+  <div className="grid md:grid-cols-2 gap-8">
+    <div>
+      <h3 className="text-xl font-semibold mb-2">Languages & Concepts</h3>
+      <p>Java (OOP, Multithreading, Collections, JDBC, Memory), Python, Data Structures, Algorithms, HLD, LLD</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">Frameworks & Tools</h3>
+      <p>Spring Boot, Spring Cloud, JWT, Spring Security, Spring Batch, Maven, Kafka, Docker</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">Protocols</h3>
+      <p>TCP/IP, UDP, HTTP/1/2, SCTP, SIGTRAN, WebSocket</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">Databases</h3>
+      <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">Others</h3>
+      <p>Microservices, AWS, Jenkins, Git, React, JavaScript, REST API</p>
+    </div>
+  </div>
+</section>
 
-      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <div className="bg-white p-6 rounded-xl shadow-sm border">
-          <h4 className="font-semibold">Languages</h4>
-          <p className="mt-2 text-sm text-slate-500">Java · Kotlin · SQL</p>
-        </div>
-        <div className="bg-white p-6 rounded-xl shadow-sm border">
-          <h4 className="font-semibold">Frameworks</h4>
-          <p className="mt-2 text-sm text-slate-500">Spring Boot · Spring Cloud</p>
-        </div>
-        <div className="bg-white p-6 rounded-xl shadow-sm border">
-          <h4 className="font-semibold">Cloud</h4>
-          <p className="mt-2 text-sm text-slate-500">AWS (ECS, RDS, S3, Kinesis)</p>
-        </div>
-        <div className="bg-white p-6 rounded-xl shadow-sm border">
-          <h4 className="font-semibold">Other</h4>
-          <p className="mt-2 text-sm text-slate-500">Docker · Jenkins · Redis</p>
-        </div>
-      </div>
-    </section>
   );
 }
