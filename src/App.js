@@ -18,7 +18,7 @@ function App() {
           <Nav />
 
           {/* Main content */}
-          <main className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-40">
+          <main className="mx-auto px-6 sm:px-8 lg:px-12 pt-40">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/skills" element={<Skills />} />

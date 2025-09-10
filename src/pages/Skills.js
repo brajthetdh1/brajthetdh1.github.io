@@ -10,7 +10,7 @@ export default function Skills() {
     </div>
     <div>
       <h3 className="text-xl font-semibold mb-2">Frameworks & Tools</h3>
-      <p>Spring Boot, Spring Cloud, JWT, Spring Security, Spring Batch, Maven, Kafka, Docker</p>
+      <p>Spring Boot, Spring Mvc, Spring Cloud, JWT, Spring Security, Spring Batch, Maven, Kafka, Docker</p>
     </div>
     <div>
       <h3 className="text-xl font-semibold mb-2">Protocols</h3>
@@ -21,8 +21,12 @@ export default function Skills() {
       <p>MySQL, PostgreSQL, MongoDB, Redis</p>
     </div>
     <div>
+      <h3 className="text-xl font-semibold mb-2">Front End</h3>
+      <p>React, JavaScript, Next.js, jquery, HTML, CSS</p>
+    </div>
+    <div>
       <h3 className="text-xl font-semibold mb-2">Others</h3>
-      <p>Microservices, AWS, Jenkins, Git, React, JavaScript, REST API</p>
+      <p>Microservices, AWS, Jenkins, Git,  REST API</p>
     </div>
   </div>
 </section>
