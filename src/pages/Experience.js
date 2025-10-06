@@ -1,17 +1,6 @@
 export default function Experience() {
   const experiences = [
     {
-      company: "Independent Software Consultant",
-      role: "Freelance Software Engineer",
-      period: "Jul 2024 – Present | Muzaffarpur (Remote)",
-      description: [
-        "Developed energy trading modules using java, spring boot, Microservices, Kafka, Mysql and MongoDB",
-        "Developed spring batch jobs for pulling data from remote api or webpage and update Database",
-        "Designed and Developed Document Management System using java, spring boot, mongodb, redis",
-      ],
-      color: "from-cyan-500 to-blue-500",
-    },
-    {
       company: "Reliance Jio",
       role: "Software Engineer Manager",
       period: "Sep 2022 – Jul 2024 | Mumbai (Onsite)",
@@ -68,29 +57,29 @@ export default function Experience() {
   ];
 
   return (
-   
+
     <section className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 px-6">
-  <div className="w-full max-w-[1300px] mx-auto">
-    <h1 className="text-5xl font-bold text-center mb-16">Experience</h1>
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-      {experiences.map((exp, index) => (
-        <div
-          key={index}
-          className="bg-white/10 backdrop-blur-md rounded-xl shadow-md p-8 hover:shadow-2xl transition"
-        >
-          <h2 className="text-2xl font-semibold">{exp.company}</h2>
-          <h3 className="text-lg text-indigo-300">{exp.role}</h3>
-          <p className="text-sm text-gray-300 mb-6">{exp.period}</p>
-          <ul className="list-disc list-inside space-y-3 text-gray-200">
-            {exp.description.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
+      <div className="w-full max-w-[1300px] mx-auto">
+        <h1 className="text-5xl font-bold text-center mb-16">Experience</h1>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className="bg-white/10 backdrop-blur-md rounded-xl shadow-md p-8 hover:shadow-2xl transition"
+            >
+              <h2 className="text-2xl font-semibold">{exp.company}</h2>
+              <h3 className="text-lg text-indigo-300">{exp.role}</h3>
+              <p className="text-sm text-gray-300 mb-6">{exp.period}</p>
+              <ul className="list-disc list-inside space-y-3 text-gray-200">
+                {exp.description.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
 
 

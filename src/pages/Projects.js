@@ -20,23 +20,8 @@ export default function Projects() {
       <h2 className="text-4xl font-bold mb-12 text-center">Projects</h2>
 
       <div className="space-y-12 text-lg leading-relaxed text-gray-700">
-        <div>
-          <h3 className="text-2xl font-semibold mb-3">Independent Software Consultant</h3>
-          <p className="mb-8">
-            I designed and implemented enterprise-grade backend systems. My work included
-            developing data crawling pipelines with <span className="font-semibold">Spring Batch</span>
-            for energy trading analytics and building document as well as notification management systems
-            integrated with <span className="font-semibold">Kafka</span> and REST APIs.
-          </p>
-          <p className="mb-8">
-            I developed advanced features for <span className="font-semibold">energy forecasting and power scheduling</span>,
-            including modules for <span className="font-semibold">injection, drawl, weather map integration, and energy banking</span>.
-            These systems were built using <span className="font-semibold">Java 8, Spring Boot, MySQL, and MongoDB</span>, ensuring
-            high performance and scalability for handling real-time energy data. The solution provided accurate forecasting insights,
-            optimized scheduling workflows, and enabled utilities to make better operational and financial decisions.
-          </p>
-
-        </div>
+        
+        
 
         <div>
           <h3 className="text-2xl font-semibold mb-3">5G Core System – Reliance Jio</h3>
